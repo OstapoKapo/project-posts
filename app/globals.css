@@ -1,33 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #333;
+  color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+
+}
+
+.header a {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin: 3px
+}
+
+
+
+.Logo {
+  font-size: 32px;
+  font-weight: 500;
+  color: orange;
+
+}
+
+.container {
+  width: 100%;
+  min-height: 90vh;
+  height: auto;
+  overflow-y: scroll;
+
+
+
+
+}
+
+.post {
+  padding: 25px;
+  margin: 16px;
+  color: black;
+  background-color: white;
+}
+
+
+.postbtn {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  height: 40px;
+
+
+  background-color: white;
+}
+
+.main {
+  width: 100%;
+  height: 90vh;
+}
+
+.footer {
+  width: 100%;
+  height: 16vh;
+
 }
