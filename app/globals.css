@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-color: #333;
   color: white;
+  padding-bottom: 10px;
 }
 
 .header {
@@ -17,7 +22,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
-
 }
 
 .header a {
@@ -41,20 +45,8 @@ body {
   width: 100%;
   min-height: 90vh;
   height: auto;
-  overflow-y: scroll;
-
-
-
-
+  padding: 20px 50px;
 }
-
-.post {
-  padding: 25px;
-  margin: 16px;
-  color: black;
-  background-color: white;
-}
-
 
 .postbtn {
   color: black;
@@ -68,11 +60,48 @@ body {
 
 .main {
   width: 100%;
-  height: 90vh;
+  min-height: 80vh;
 }
 
 .footer {
   width: 100%;
-  height: 16vh;
+  height: min-content;
+  padding: 0 30px;
+}
 
+.goods{
+  width: 100%;
+  height: min-content;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  margin: 10px 0;
+}
+.goods__link{
+  width: 120px;
+  height: 30px;
+  border: 1px solid #fff;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.4s;
+  margin-top: 15px;
+}
+.goods__link:hover{
+  color: blue;
+  border: 1px solid blue;
+}
+.goods__title{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.post{
+  margin-top: 20px;
+  transition: 0.4s;
+}
+.post:hover{
+  margin-top: 10px;
 }
