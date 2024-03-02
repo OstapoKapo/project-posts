@@ -43,7 +43,7 @@ body {
 
 .container {
   width: 100%;
-  min-height: 90vh;
+  min-height: 85vh;
   height: auto;
   padding: 20px 50px;
 }
@@ -72,10 +72,16 @@ body {
 .goods{
   width: 100%;
   height: min-content;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.goods__main{
   padding: 20px;
+  width: 98%;
+  margin-left: 20px;
   border-radius: 10px;
   border: 1px solid #fff;
-  margin: 10px 0;
 }
 .goods__link{
   width: 120px;
@@ -104,4 +110,82 @@ body {
 }
 .post:hover{
   margin-top: 10px;
+}
+.goodsContainer{
+  height: 100%;
+  width: 100%;
+}
+.goodsContainer__chunk{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.goodsContainer__pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: min-content;
+}
+.goodsContainer__arrow{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.goodsContainer__arrow img{
+  width: 100%;
+  height: 100%;
+}
+.goodsContainer__text{
+  width: min-content;
+  height: min-content;
+  margin-top: -20px;
+}
+.goodsContainer__text span{
+  color: orange;
+  font-weight: 600;
+}
+.goodsContainer__filter{
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.goodsContainer__btn{
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: 0.4s;
+}
+.goodsContainer__btn_active{
+  background-color: orange;
+  color: #fff;
+  border: none;
+}
+.goodsContainer__btn:hover{
+  transition: 0.4s;
+  border: 1px solid orange;
+}
+.goodsContainer__inp{
+  width: 250px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  color: #000;
+  padding-left: 20px;
+  margin-left: 20px;
 }
